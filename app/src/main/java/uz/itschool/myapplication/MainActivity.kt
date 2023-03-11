@@ -8,6 +8,7 @@ import uz.itschool.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -19,5 +20,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = Adapter(Mocklist.getModel() as ArrayList<SportItems>)
 
         binding.recyclerView.adapter = adapter
+
+
     }
 }

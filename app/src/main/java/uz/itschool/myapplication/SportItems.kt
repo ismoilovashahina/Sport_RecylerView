@@ -6,6 +6,8 @@ import android.widget.TextView
 data class SportItems(var img: Int, var tv1: String, var tv2:String, var tv3: String )
 
 object Mocklist {
+
+
     fun getModel() : List<SportItems>{
 
         val itemModel1 =  SportItems(
